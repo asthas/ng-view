@@ -23,17 +23,14 @@ app.config(function($routeProvider){
 });
 
 
-app.controller('mainController', function(){
-	var vm = this;
-	vm.pageClass= 'page-home';
+app.controller('mainController', function($scope){
+	$scope.pageClass= ' page-home';
 })
 
-app.controller('aboutController', function(){
-	var vm = this;
-	vm.pageClass= 'page-about';
+app.controller('aboutController', function($scope){
+	$scope.pageClass= ' page-about';
 })
 
-app.controller('contactController', function(){
-	var vm = this;
-	vm.pageClass= 'page-contact';
+app.controller('contactController', function($scope){
+	$scope.pageClass= ' page-contact';
 })
